@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "24.0.2"
     defaultConfig {
-        applicationId "com.czp.pianotiles"
+        applicationId "com.eurasia.pianotiles"
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1

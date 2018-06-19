@@ -1,4 +1,4 @@
-package com.czp.pianotiles;
+package com.eurasia.pianotiles;
 
 import android.app.Dialog;
 import android.content.Context;

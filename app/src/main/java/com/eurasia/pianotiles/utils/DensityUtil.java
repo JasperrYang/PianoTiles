@@ -1,4 +1,4 @@
-package com.czp.pianotiles.utils;
+package com.eurasia.pianotiles.utils;
 
 import android.content.Context;
 import android.util.DisplayMetrics;

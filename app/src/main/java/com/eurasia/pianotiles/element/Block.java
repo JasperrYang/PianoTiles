@@ -1,4 +1,4 @@
-package com.czp.pianotiles.element;
+package com.eurasia.pianotiles.element;
 
 import android.graphics.Color;
 import android.graphics.RectF;
