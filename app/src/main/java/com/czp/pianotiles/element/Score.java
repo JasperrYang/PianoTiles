@@ -3,15 +3,18 @@ package com.czp.pianotiles.element;
 import android.graphics.Color;
 
 /**
- * Yang
+ * 
  * 2018/6/14
  **/
 
 public class Score {
     private static final int SPAN = 1;
     private int mNumber;
+    //边框宽度
     private float mTextSize = 60;
+    //描边宽度
     private float mStrokeWidth = 20;
+    //白块颜色
     private int mTextColor = Color.RED;
 
     public void update() {
