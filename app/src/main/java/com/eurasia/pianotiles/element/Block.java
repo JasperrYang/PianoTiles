@@ -3,13 +3,17 @@ package com.eurasia.pianotiles.element;
 import android.graphics.Color;
 import android.graphics.RectF;
 /**
- * Yang
+ * 别踩白块中的游戏块
  * 2018/6/14
  **/
 public class Block {
+    //标准状态
     public static final int STATE_STANDARD = 0;
+    //开始状态
     public static final int STATE_ACTIVE = 1;
+    //错误状态
     public static final int STATE_ERROR = 2;
+    //访问状态
     public static final int STATE_VISITED = 3;
     private int[] mBgColors = new int[]{Color.WHITE, Color.BLACK, Color.RED, 0xFFD2D2D2};
     private int mState = STATE_STANDARD;
