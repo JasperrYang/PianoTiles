@@ -180,6 +180,11 @@ public class PianoTilesView extends SurfaceView implements SurfaceHolder.Callbac
             }
         }
 
+    /**
+     * 当屏幕有Touch事件时，此方法就会被调用。
+     * @param event
+     * @return
+     */
         @Override
         public boolean onTouchEvent(MotionEvent event) {
             if (event.getAction() == MotionEvent.ACTION_DOWN) {
@@ -209,6 +214,9 @@ public class PianoTilesView extends SurfaceView implements SurfaceHolder.Callbac
             return super.onTouchEvent(event);
         }
 
+    /**
+     * 开始游戏
+     */
         public void startGame() {
             setZOrderOnTop(true);
             TimerTask task = new TimerTask() {
@@ -307,6 +315,9 @@ public class PianoTilesView extends SurfaceView implements SurfaceHolder.Callbac
             }
         }
 
+    /**
+     * 绘制画布
+     */
         private void draw() {
             try {
                 mCanvas = mHolder.lockCanvas();
@@ -336,6 +347,9 @@ public class PianoTilesView extends SurfaceView implements SurfaceHolder.Callbac
             }
         }
 
+    /**
+     * 我们销毁View的时候。我们写的这个View不再显示
+     */
         @Override
         protected void onDetachedFromWindow() {
             super.onDetachedFromWindow();
