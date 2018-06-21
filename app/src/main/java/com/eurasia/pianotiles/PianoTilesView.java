@@ -316,7 +316,7 @@ public class PianoTilesView extends SurfaceView implements SurfaceHolder.Callbac
         }
 
     /**
-     * 绘制画布
+     * 黑白快下移
      */
         private void draw() {
             try {

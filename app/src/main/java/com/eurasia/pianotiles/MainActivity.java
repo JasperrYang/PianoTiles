@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         mCountDownView = (CountDownView) findViewById(R.id.countTextView);
         mMarkRela = (RelativeLayout) findViewById(R.id.markRela);
         mCountDownView.setData(Arrays.asList("3", "2", "1", "开始"));
-        mCountDownView.init();
+        mCountDownView.init();//刷新执行完后，进入下一个函数。
+        //这里不是监听，不需要触发事件，主线程到这里即执行。
         mCountDownView.setCountDownListener(new CountDownView.CountDownListener() {
             @Override
             public void finish() {
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 mPianoTilesView.startGame();
             }
         });
-
+        //设置游戏结束后的弹框，有结束与重开功能。
         mAlertScoreDialog = new AlertScoreDialog.Builder(MainActivity.this)
                 .setFinishClickListener(new View.OnClickListener() {
                     @Override
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 })
                 .builder();
 
-
+        //这里有一个线程一直在设置分数。
         mPianoTilesView.setGameListener(new PianoTilesView.GameListener() {
             @Override
             public void gameEnd(final String number) {
