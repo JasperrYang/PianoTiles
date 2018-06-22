@@ -15,6 +15,7 @@ public class Block {
     public static final int STATE_ERROR = 2;
     //访问状态
     public static final int STATE_VISITED = 3;
+    
     private int[] mBgColors = new int[]{Color.WHITE, Color.BLACK, Color.RED, 0xFFD2D2D2};
     private int mState = STATE_STANDARD;
     private float mHeight;
