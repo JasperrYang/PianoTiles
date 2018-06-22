@@ -1,4 +1,4 @@
-package com.czp.pianotiles.utils;
+package com.eurasia.pianotiles.utils;
 
 import android.content.Context;
 import android.util.DisplayMetrics;
@@ -40,7 +40,6 @@ public class DensityUtil {
         mWindowManager.getDefaultDisplay().getMetrics(dm);
         return new int[] { dm.widthPixels, dm.heightPixels };
     }
-
     // 尺寸转换：sp转px
     public static int sp2px(Context context, float spVal) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, spVal,
